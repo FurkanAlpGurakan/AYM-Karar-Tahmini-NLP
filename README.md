@@ -7,6 +7,10 @@ Hukuki metinlerin uzun ve karmaşık yapısını bilgisayarlı dil modelleriyle 
 * AYM Kararlar Bilgi Bankası üzerinden sistematik bir inceleme yapılarak, karar sonuçlarına göre (İhlal Var, İhlal Yok, Kabul Edilemez) dengeli bir dağılım gözetilerek **1.800 karar manuel olarak derlenmiş** ve makine öğrenmesine uygun, sınıflandırılmış özgün bir veri seti (corpus) oluşturulmuştur.
 * Geleneksel NLP yaklaşımları ile modern Transformer mimarileri kıyaslanmıştır.
 
+## 💾 Veri Seti (Kaggle)
+Proje kapsamında, karar sonuçlarına göre dengeli bir dağılımla manuel olarak derlenen 1.800 kararlık özgün NLP veri setimize ve sınıflandırma detaylarına Kaggle üzerinden ulaşabilirsiniz:
+👉 [**Turkish Court Decisions NLP Dataset**](https://www.kaggle.com/datasets/furkanalpgrakan/turkish-court-decisions-nlp)
+
 ## 🧹 Veri Sızıntısını (Data Leakage) Önleme
 Hukuk metinlerinin en sonunda yer alan ve nihai kararı açıkça belirten "HÜKÜM" veya "SONUÇ" kısımları, modelin kopya çekmesini (Data Leakage) önlemek amacıyla **Regex** kullanılarak metinlerden tamamen ayıklanmıştır. Model, kararı sadece olayın gelişimi, iddialar ve hukuki gerekçelere bakarak tahmin etmeye zorlanmıştır.
 
